@@ -23,7 +23,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 .logo {
   width: 140px;
@@ -40,7 +40,7 @@ nav ul li a {
   position: relative;
 }
 nav ul li a::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background: #ff004f;
@@ -49,6 +49,6 @@ nav ul li a::after {
   bottom: -6px;
   transition: 0.5s;
 }
-nav ul li a:hover::after{
-    width: 100%;
+nav ul li a:hover::after {
+  width: 100%;
 }
