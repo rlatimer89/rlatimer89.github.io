@@ -55,12 +55,43 @@
             <p>"I am a well-rounded individual with a diverse background. I completed my undergraduate studies at Heidelberg University and excelled as a college wrestler, showcasing discipline and commitment. Over a decade of service in the United States Navy instilled leadership, teamwork, and resilience in me. Further, I delved into programming, mastering languages like Java, C#, and web development technologies such as CSS and HTML during my time at WecanCodeIT. This blend of academic, athletic, military, and technical experiences equips me with a unique skill set, enabling success in a variety of professional contexts."</p>
 
            <div class="tab-titles">
-            <p class="tab-links active-link">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
-           </div>  
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Full Stack Developer</span><br>Java , C# , JavaScript , HTML , CSS
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023-Present</span><br>Student at WeCanCodeIT. 
+                </li>
+              </ul>
+            </div>
         </div> 
       </div>
     </div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links")
+      var tablinks = document.getElementsByClassName("tab-contents")
+
+      function opentab (tabname){
+        for(tablink of tablinks){
+        tablink.classLists.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tablink.classList.remove("active-tab");
+        }
+
+      } 
+
+
+
+    </script>
   </body>
 </html>
