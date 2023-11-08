@@ -1,101 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2390a208d5.js" crossorigin="anonymous"></script>
     <style>
-      #header {
-        /* Add any styles you want for the header here */
-      }
+        /* Add your existing CSS styles here */
+        #header {
+            /* Header styles */
+        }
 
-      .VeteranOwned-RedBg {
-        width: 200px; /* Set the desired width */
-        height: auto; /* Maintain aspect ratio by setting height to auto */
-      }
+        .VeteranOwned-RedBg {
+            width: 200px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio by setting height to auto */
+        }
 
-      /* Add more CSS styles for the navigation and other elements as needed */
+        /* Add more CSS styles for the navigation and other elements as needed */
+
+        /* Center the footer at the bottom of the viewport */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: #f0f0f0; /* You can adjust the background color */
+            padding: 10px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div id="header">
-      <div class="container">
-        <nav>
-          <img
-            src="img/VeteranOwned-RedBg (1).png"
-            class="VeteranOwned-RedBg"
-          />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>Full Stack Developer</p>
-          <h1>
-            Hi, I'm <span>Ronald Latimer</span><br />with ValorTech Solutions,
-            LLC.
-          </h1>
+        <div class="container">
+            <nav>
+                <img src="img/VeteranOwned-RedBg (1).png" class="VeteranOwned-RedBg" />
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>
+                    Hi, I'm <span>Ronald Latimer</span><br />with ValorTech Solutions,
+                    LLC.
+                </h1>
+            </div>
         </div>
-      </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/IMG_2569.PNG" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"I am a well-rounded individual with a diverse background. I completed my undergraduate studies at Heidelberg University and excelled as a college wrestler, showcasing discipline and commitment. Over a decade of service in the United States Navy instilled leadership, teamwork, and resilience in me. Further, I delved into programming, mastering languages like Java, C#, and web development technologies such as CSS and HTML during my time at WeCanCodeIT. This blend of academic, athletic, military, and technical experiences equips me with a unique skill set, enabling success in a variety of professional contexts."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>Java, C#, JavaScript, HTML, CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Present</span><br>Student at WeCanCodeIT.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2008-2012</span><br>Graduated from Heidelberg University.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fa fa-code" style="font-size: 24px;"></i>
+
+                    <h2>Web Design</h2>
+                    <p>HTML/CSS: I'm proficient in coding with HTML and CSS, ensuring that my designs are implemented as intended.</p>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class "container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/Furiends-Key-Art.png" alt="Virtual Pet">
+                    <div class="layer">
+                        <h3>Virtual Pet Game</h3>
+                        <p>
+                            In this Java-based virtual pet care simulation, players assume the role of responsible caretakers for their digital companions. The game challenges players to diligently tend to their pets' needs, encompassing feeding, hydration, and playtime activities. Neglecting these vital responsibilities may result in the pets running away, fostering a sense of accountability and engagement. The virtual pets' well-being is gauged through metrics like hunger, thirst, and happiness, offering players an immersive experience. If these metrics fall to critical levels due to neglect, the game concludes with a "game over" scenario, reinforcing the significance of active care.
+
+                            You can find the source code for this game on GitHub: <a href="https://github.com/2023-Fall-Java-Cohort/virtual-pet-1-rlatimer89.git" target="_blank">GitHub Repository</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/vr-automotive.jpg" alt="">
+                    <div class="description">
+                        <h3>Car Garage</h3>
+                        <p>In the concept of a Java-based car garage game, players are immersed in a dynamic environment that simulates the operations of a virtual car dealership.</p>
+                        <p>This interactive experience enables users to explore a range of exciting functionalities, including the ability to purchase, sell, and even test drive an array of vehicles.</p>
+                        <p>With a focus on realism and authenticity, the game offers a comprehensive inventory of cars, each with unique attributes and pricing, and a robust financial system that reflects the player's financial management skills.</p>
+                        <p>As players buy, sell, and test drive cars, they accumulate wealth, expand their garage, and work toward becoming a successful automotive entrepreneur.</p>
+                        <p>The game's immersive graphics and user-friendly interface enhance the overall gaming experience, creating an engaging and educational platform for enthusiasts of the automotive world and aspiring entrepreneurs.</p>
+
+                        You can find the source code for this game on GitHub: <a href="https://github.com/2023-Fall-Java-Cohort/car-workshop-template-rlatimer89.git" target="_blank">GitHub Repository</a>.
+                    </div>
+                    <!-- Add more work items as needed -->
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="img/IMG_2569.PNG" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>"I am a well-rounded individual with a diverse background. I completed my undergraduate studies at Heidelberg University and excelled as a college wrestler, showcasing discipline and commitment. Over a decade of service in the United States Navy instilled leadership, teamwork, and resilience in me. Further, I delved into programming, mastering languages like Java, C#, and web development technologies such as CSS and HTML during my time at WecanCodeIT. This blend of academic, athletic, military, and technical experiences equips me with a unique skill set, enabling success in a variety of professional contexts."</p>
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>If you would like to get in touch with me, you can reach out through the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:ronald.latimer89@yahoo.com">ronald.latimer89@yahoo.com</a></li>
+                <li>Phone: <a href="tel:8108746792">+1810-874-6792</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/latimer89">https://www.linkedin.com/in/latimer89</a></li>
+                <!-- You can add more contact methods as needed -->
+            </ul>
+        </div>
+    </div>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-              <ul>
-                  <li><span>Full Stack Developer</span><br>Java, C#, JavaScript, HTML, CSS</li>
-              </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-              <ul>
-                  <li><span>2023-Present</span><br>Student at WeCanCodeIT.</li>
-              </ul>
-          </div>
-          <div class="tab-contents" id="education">
-              <ul>
-                  <li><span>2008-2012</span><br>Graduated from Heidelberg University.</li>
-              </ul>
-          </div>
-      </div>
-  
-      <script>
-          var tablinks = document.querySelectorAll(".tab-links");
-          var tabcontents = document.querySelectorAll(".tab-contents");
-  
-          function opentab(tabname) {
-              for (tablink of tablinks) {
-                  tablink.classList.remove("active-link");
-              }
-              for (tabcontent of tabcontents) {
-                  tabcontent.classList.remove("active-tab");
-              }
-  
-              var selectedTab = document.getElementById(tabname);
-              if (selectedTab) {
-                  selectedTab.classList.add("active-tab");
-              }
-          }
-  
-          // Initially open the "Skills" tab
-          opentab("skills");
-      </script>
-  </body>
-  </html>
+    <script>
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            var selectedTab = document.getElementById(tabname);
+            if (selectedTab) {
+                selectedTab.classList.add("active-tab");
+            }
+        }
+
+        // Initially open the "Skills" tab
+        opentab("skills");
+    </script>
+    <footer style="color: black;">
+        <hr>
+        &copy; 2023 rlatimer89@github.io | All Rights Reserved
+    </footer>
